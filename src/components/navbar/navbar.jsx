@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import Logo from '../../images/logo.svg';
 import Union from './images/Union.png';
-import './stylesheets/navbar.css'
+import './stylesheets/navbar.css';
+
 
 const NavBar = () => {
 
