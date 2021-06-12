@@ -7,8 +7,9 @@ const App = () => {
 
 
 	return(
-		<div>
+		<div className='AppContainer'>
 			<NavBar />
+			<div className='navBorder'></div>
 			<MovieList />
 		</div>
 	)

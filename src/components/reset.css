@@ -46,3 +46,9 @@ button,
 input[type="submit"] {
   cursor: pointer;
 }
+
+.AppContainer{
+  width: 90%;
+  margin: 0 auto;
+  background-color: pink;
+}

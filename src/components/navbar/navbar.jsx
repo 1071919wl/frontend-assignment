@@ -32,7 +32,7 @@ const NavBar = () => {
                     <div className='hamburger'></div>
                     <div className='hamburger'></div>
                 </div> */}
-            </div>            
+            </div>      
         </nav>
     )
 }
