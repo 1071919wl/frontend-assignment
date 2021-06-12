@@ -1,8 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import {fetchMovies} from '../../util/movies_api_util';
 import MovieItem from './movieItem';
-// import LeadershipItem from './leadership_item';
-// import './stylesheets/leadership.css'
+import './stylesheets/movie.css'
 
 const Movie = () => {
 
@@ -27,6 +26,7 @@ const Movie = () => {
 
     return (
         <div>
+            {console.log(movies)}
             <div className='LeadershipTitleContainer'>
                 <h1>Most Recent Movies</h1>
             </div>

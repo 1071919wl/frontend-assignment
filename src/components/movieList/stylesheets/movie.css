@@ -1,0 +1,49 @@
+.LeadershipTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.glassesImgContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Glasses,
+.Image {
+    position: absolute;
+    top: 1000px;
+}
+
+.Image {
+    position: absolute;
+    top: 750px;
+}
+
+.leadershipContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.leadershipList {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:1100px) {
+
+    /* For mobile phones: */
+    .Glasses {
+        display: none;
+    }
+
+    .LeadershipTitleContainer {
+        margin-bottom: 10px;
+    }
+
+
+}
