@@ -1,0 +1,148 @@
+.searchContainer {
+    font-size: 12px;
+    outline: 1px solid lightgray;
+    color: #6e6c6e;
+    /* width: 150px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.NavbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    
+
+    border-bottom: 1.5px solid lightgray;
+
+    /* background-color: yellow; */
+}
+
+.navRightContainer{
+    /* align-items: center; */
+    /* display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    background-color: pink; */
+}
+
+.searchContainer{
+    /* text-align: center; */
+}
+
+.Logo{
+    height: auto;
+    width: 130px;
+}
+
+.Union{
+    /* background-color: green; */
+    margin-right: 8px;
+}
+
+
+@media only screen and (max-width:1100px) {
+
+    /* For mobile phones: */
+
+    .NavbarContainer {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+    }
+
+    .Arrow{
+        display: none;
+    }
+
+    .navSelectionContainer{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .navDropdownContainer {
+        display: none;
+    }
+
+    .navRightContainer{
+        justify-content: flex-end;
+    }
+
+    .Hover{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .hamburger{
+       width: 35px;
+       height: 5px;
+       background-color: black;
+       margin: 6px 0;
+    }
+
+    .navDropdownContainer li{
+        width: 200px;
+        font-weight: normal;
+        padding-left: 8px;
+    }
+
+    .navDropdownContainer li:hover,
+    .dentistButton:hover,
+    .loginButton:hover {
+        background-color: lightblue;
+        cursor: pointer;
+        z-index: 1088;
+        width: 200px;
+    }
+
+    .dentistButton,
+    .loginButton{
+        display:flex;
+        justify-content: flex-start;
+        border:0;
+        background: none;
+        color:black;
+        margin-left:0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .dentistButton:hover,
+    .loginButton:hover{
+        border: 0;
+        border-radius:0;
+    }
+    
+    #hidden {
+        display: flex;
+        flex-direction: column;
+        top: 75px;
+        position: absolute;
+        right: 20px;
+        z-index: 1088;
+        color: black;
+        background-color: rgb(233, 233, 233);
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 30px;
+        line-height: 40px;
+        width: 200px;
+    }
+
+}

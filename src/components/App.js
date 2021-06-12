@@ -1,8 +1,15 @@
-// import logo from './logo.svg';
+import React from 'react';
+import NavBar from './navbar/navbar';
+import './reset.css';
 
-const App = () => (
-	// <img src={logo} alt="Timescale" />
-	<h1>logo</h1>
-)
+const App = () => {
+
+
+	return(
+		<div>
+			<NavBar />
+		</div>
+	)
+}
 
 export default App;
