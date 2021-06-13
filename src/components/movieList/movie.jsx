@@ -26,20 +26,19 @@ const Movie = () => {
 
     return (
         <div>
-            {console.log(movies)}
-            <div className='LeadershipTitleContainer'>
+            <div className='recentMovieContainer'>
                 <h1>Most Recent Movies</h1>
             </div>
             {errors ?
-                <h1 className='leadershipContainer' >{errors}</h1>
+                <h1 className='movieError' >{errors}</h1>
                 :
                 null
             }
             {!load ?
-                <div className='leadershipContainer'>
+                <div className='moviesContainer' >
                     {movies.map((movie) =>(
-                        <div key={movie.id} className='leadershipList'>
-                            <MovieItem movie = {movie}/>
+                        <div key={movie.id} className='moviesList'>
+                            <MovieItem movie={movie} />
                         </div>   
                     ))}
                 </div>

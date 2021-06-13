@@ -50,5 +50,5 @@ input[type="submit"] {
 .AppContainer{
   width: 90%;
   margin: 0 auto;
-  background-color: pink;
+  /* background-color: pink; */
 }

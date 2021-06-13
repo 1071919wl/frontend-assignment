@@ -9,7 +9,6 @@ const App = () => {
 	return(
 		<div className='AppContainer'>
 			<NavBar />
-			<div className='navBorder'></div>
 			<MovieList />
 		</div>
 	)
