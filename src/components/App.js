@@ -1,15 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import NavBar from './navbar/navbar';
-import MovieList from './movieList/movie';
+import Movie from './movieList/movie';
 import './reset.css';
+import SearchContextProvider from './context/search-context';
 
 const App = () => {
 
+	// const [searchInput, setSearchInput] = useState("");
 
 	return(
 		<div className='AppContainer'>
-			<NavBar />
-			<MovieList />
+			<SearchContextProvider>
+				<NavBar />
+				<Movie />
+			</SearchContextProvider>
 		</div>
 	)
 }

@@ -1,13 +1,18 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState, useEffect, useContext} from 'react';
 import {fetchMovies} from '../../util/movies_api_util';
 import MovieItem from './movieItem';
-import './stylesheets/movie.css'
+import './stylesheets/movie.css';
+import {SearchContext} from '../context/search-context';
 
 const Movie = () => {
 
     const [movies, setMovies] = useState([]);
     const [load, setLoad] = useState(false);
     const [errors, setErrors] = useState(null);
+    const {searchInput} = useContext(SearchContext);
+    const [searchResults, setSearchResults] = useState([]);
+
+console.log('FROM MOVIE HIT', searchInput)
 
     useEffect(()=>{
         setLoad(true)
