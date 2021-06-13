@@ -1,0 +1,73 @@
+.detailTitleContainer{
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 15px;
+    width: 520px;
+
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+
+    /* background-color: yellow; */
+}
+
+.imgDetailContainer{
+    display: flex;
+    padding: 20px;
+}
+
+.dateLabel{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.detailImg{
+    height: auto;
+    width: 250px;
+}
+
+.voteAvgContainer{
+    display:flex;
+}
+
+.voteAvg{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.releaseDateContainer{
+    display:flex;
+
+    margin-bottom: 15px;
+}
+
+.overviewContainer{
+    margin-bottom: 15px;
+}
+
+.dateVoteContainer{
+    margin-left: 20px;
+    margin-right: 20px;
+
+    /* background-color: lightblue; */
+}
+
+
+/*! ===================== mobile */
+@media only screen and (max-width:620px) {
+
+    /* For mobile phones: */
+    .imgDetailContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .detailTitleContainer{
+        width: 73vw;
+
+    }
+}

@@ -16,9 +16,8 @@
     transform: translate(-50%, -50%);
     background-color: white;
     border: 1px solid lightgray;
-    height: 85%;
-    /* width: 70%; */
-    width: 950px;
+    height: 480px;
+    width: 600px;
 
     overflow: auto;
 }
@@ -26,12 +25,14 @@
 .close-x{
     /* float: right; */
     position: absolute;
-    right: -10px;
-    top: 5px;
+    right: 0px;
+    top: 10px;
     margin-right: 20px;
-    width: 32px;
-    /* height: 32px; */
+    width: 22px;
+    height: 21px;
     opacity: 0.3;
+    border: 1px solid black;
+    
 }
 
 .close-x:hover {
@@ -43,11 +44,12 @@
 .close-x:after {
     position: absolute;
     /* float: right; */
-    left: 15px;
+    left: 10px;
     content: ' ';
-    height: 33px;
+    height: 15px;
     width: 2px;
     background-color: #333;
+    top: 3px;
 }
 
 .close-x:before {
