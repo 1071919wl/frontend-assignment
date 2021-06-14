@@ -99,9 +99,9 @@
         display: none;
     }
 
-    .navRightContainer{
+    /* .navRightContainer{
         justify-content: flex-end;
-    }
+    } */
 
 
     .navDropdownContainer li{
@@ -121,6 +121,10 @@
     .hoverSearch {
         height: auto;
         width: 24px;
+    }
+
+    .hoverSearch:hover{
+        cursor: pointer;
     }
 
     .searchContainer {

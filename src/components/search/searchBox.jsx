@@ -11,7 +11,7 @@ const SearchBox = () => {
     return(
         <div className='navRightContainer'  >
 
-            <label className='searchContainer' id={showLinks ? "hidden" : ""} onMouseLeave={()=>setShowLinks(!showLinks)}>
+            <label className='searchContainer' id={showLinks ? "hidden" : ""} onMouseLeave={()=>setShowLinks(false)}>
                 <img src={Union} alt="Union" className='Union'/> 
                 <input type='search' placeholder='Search for a movie'  className='searchInput' onChange={e=>setSearchInput(e.target.value)}/>
             </label>
