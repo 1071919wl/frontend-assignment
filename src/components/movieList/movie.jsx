@@ -10,9 +10,7 @@ const Movie = () => {
     const [load, setLoad] = useState(false);
     const [errors, setErrors] = useState(null);
     const {searchInput} = useContext(SearchContext);
-    const [searchResults, setSearchResults] = useState([]);
 
-console.log('FROM MOVIE HIT', searchInput)
 
     useEffect(()=>{
         setLoad(true)
@@ -29,6 +27,18 @@ console.log('FROM MOVIE HIT', searchInput)
         
     },[])
 
+    //filters api to render search text
+    const handleSearch = () => {
+        if(searchInput === ""){
+            return movies;
+        }else{
+            const filteredMovies = movies.filter(movie => (
+                movie.title.toLowerCase().includes(searchInput.toLowerCase())
+            ))
+            return filteredMovies;
+        }
+    }
+
     return (
         <div>
             <div className='recentMovieContainer'>
@@ -41,14 +51,14 @@ console.log('FROM MOVIE HIT', searchInput)
             }
             {!load ?
                 <div className='moviesContainer' >
-                    {movies.map((movie) =>(
+                    {handleSearch().map((movie) =>(
                         <div key={movie.id} className='moviesList'>
                             <MovieItem movie={movie} />
                         </div>   
                     ))}
                 </div>
             :
-                <h1>Loading...</h1> 
+                <h1 className='loading'>Loading...</h1> 
             }  
         </div>
     )
