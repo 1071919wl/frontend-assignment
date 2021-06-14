@@ -11,7 +11,7 @@ const Movie = () => {
     const [errors, setErrors] = useState(null);
     const {searchInput} = useContext(SearchContext);
 
-
+    //fetches movie api. If any error occurs, it will display message.
     useEffect(()=>{
         setLoad(true)
         fetchMovies().then((res) => {

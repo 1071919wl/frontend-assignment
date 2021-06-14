@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    /* font-family: inter; */
 }
 
 
@@ -21,7 +22,7 @@
     /* justify-content: space-between; */
     padding-left: 3vw;
     padding-right: 3vw;
-    
+    font-family: inter;
 
     /* background-color: yellow; */
 }
@@ -74,6 +75,9 @@
     margin-right: 8px;
 }
 
+.Hover {
+    display: none;
+}
 
 @media only screen and (max-width:1100px) {
 
@@ -85,9 +89,6 @@
         padding-left: 20px;
     }
 
-    .Arrow{
-        display: none;
-    }
 
     .navSelectionContainer{
         align-items: center;
@@ -102,17 +103,6 @@
         justify-content: flex-end;
     }
 
-    .Hover{
-        display: block;
-        margin-right: 30px;
-    }
-
-    .hamburger{
-       width: 35px;
-       height: 5px;
-       background-color: black;
-       margin: 6px 0;
-    }
 
     .navDropdownContainer li{
         width: 200px;
@@ -120,36 +110,26 @@
         padding-left: 8px;
     }
 
-    .navDropdownContainer li:hover,
-    .dentistButton:hover,
-    .loginButton:hover {
-        background-color: lightblue;
-        cursor: pointer;
-        z-index: 1088;
-        width: 200px;
+}
+
+@media only screen and (max-width:550px) {
+    .Hover {
+        display: block;
+        /* margin-right: 30px; */
     }
 
-    .dentistButton,
-    .loginButton{
-        display:flex;
-        justify-content: flex-start;
-        border:0;
-        background: none;
-        color:black;
-        margin-left:0;
-        padding-top: 0;
-        padding-bottom: 0;
+    .hoverSearch {
+        height: auto;
+        width: 24px;
     }
 
-    .dentistButton:hover,
-    .loginButton:hover{
-        border: 0;
-        border-radius:0;
+    .searchContainer {
+        display: none;
     }
-    
+
     #hidden {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         top: 75px;
         position: absolute;
         right: 20px;
@@ -161,7 +141,9 @@
         padding-left: 20px;
         padding-right: 30px;
         line-height: 40px;
-        width: 200px;
+        width: 70vw;
     }
-
+    .searchInput{
+        width: 65vw;
+    }
 }

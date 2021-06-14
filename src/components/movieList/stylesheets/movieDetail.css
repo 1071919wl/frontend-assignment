@@ -1,10 +1,16 @@
+.MovieDetailContainer{
+    font-weight: normal;
+    font-size: 14px;
+}
+
 .detailTitleContainer{
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
     padding-left: 20px;
     padding-right: 15px;
     padding-top: 15px;
     width: 520px;
+    /* font-family: sans-serif; */
 
     /* overflow: hidden;
     text-overflow: ellipsis;

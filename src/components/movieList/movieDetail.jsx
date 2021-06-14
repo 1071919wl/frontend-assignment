@@ -2,8 +2,8 @@ import React from 'react';
 import './stylesheets/movieDetail.css';
 
 const MovieDetail = ({movie}) => {
-    console.log(movie)
 
+    //formats json to readable date (ie: May 16, 1993)
     const formatDate = (releaseDate) => {
         let date = new Date(releaseDate)
         let readable = date.toDateString();
@@ -13,7 +13,7 @@ const MovieDetail = ({movie}) => {
     }
 
     return (
-        <div>
+        <div className='MovieDetailContainer'>
             <div className='detailTitleContainer'>
                 <h1>{movie.title}</h1>
             </div>
@@ -24,7 +24,6 @@ const MovieDetail = ({movie}) => {
                 <div className='dateVoteContainer'>
                     <div className='releaseDateContainer'>
                         <label className='dateLabel'>Release Date:</label>
-                        {/* <p>{movie.release_date}</p> */}
                         <p>{formatDate(movie.release_date)}</p>
                     </div>
                     <div className='overviewContainer'>

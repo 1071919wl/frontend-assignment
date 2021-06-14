@@ -11,7 +11,7 @@ const Modal = ({show, setShow, movie, modalAction}) => {
       setShow(false)
     }
   }
-  
+  //enables and removes eventListener for modal close
   useEffect(() => {
       document.body.addEventListener('keydown', closeOnEscapeKeyDown)
       return function cleanup(){
