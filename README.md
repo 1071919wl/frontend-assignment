@@ -37,3 +37,12 @@ The main features that should be implemented
 
 [movieDB]: https://developers.themoviedb.org/3/getting-started/introduction
 [figma]: https://www.figma.com/file/KKkrDYSUAuRavpqRingRdZ/Movie-Grid?node-id=0%3A1
+
+
+### To Use
+- Create a .env file in the root directory
+- Include:
+```JavaScript 
+REACT_APP_MOVIE_DB_API_KEY = "<<Your API key>>"
+``` 
+- npm start
