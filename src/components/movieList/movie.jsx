@@ -3,6 +3,7 @@ import {fetchMovies} from '../../util/movies_api_util';
 import MovieItem from './movieItem';
 import './stylesheets/movie.css';
 import {SearchContext} from '../context/search-context';
+import Loading from '../load/loading';
 
 const Movie = () => {
 
@@ -49,6 +50,7 @@ const Movie = () => {
                 :
                 null
             }
+            <Loading isLoading={load}/>
             {!load ?
                 <div className='moviesContainer' >
                     {handleSearch().map((movie) =>(
